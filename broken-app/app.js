@@ -22,7 +22,7 @@ app.post('/api/dev-details', async function(req, res, next) {
 	const data = await Promise.all(promises);
 	const output = data.map((resp) => {
     try {
-    ({ name: resp.data.name, bio: resp.data.bio })
+    	return ({ name: resp.data.name, bio: resp.data.bio })
     } catch (err) {
       ({message: 'no data'})
     }
