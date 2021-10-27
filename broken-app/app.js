@@ -24,7 +24,7 @@ app.post('/api/dev-details', async function(req, res, next) {
     try {
     	return ({ name: resp.data.name, bio: resp.data.bio })
     } catch (err) {
-      ({message: 'no data'})
+      return ({message: 'no data'})
     }
   });
 	return res.json(output);
