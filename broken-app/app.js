@@ -1,6 +1,5 @@
 const express = require('express');
 const axios = require('axios');
-const { rejects } = require('assert');
 const app = express();
 
 const baseUrl = 'https://api.github.com/users/';
